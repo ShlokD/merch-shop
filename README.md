@@ -1,3 +1,5 @@
-# Flighty Mango
+# Merch Shop
 
-Preact + Vite + Eslint + Prettier + TailwindCSS
+Sample Merchandise Shopping Page
+
+Demo: https://merch-shop.surge.sh/
