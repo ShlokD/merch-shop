@@ -38,8 +38,7 @@ const ProductCell = (props: ProductProps) => {
         isFull ? "w-full" : "w-2/5 lg:w-1/5"
       } flex flex-col p-4 cursor-pointer`}
       onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
-    >
+      onMouseLeave={() => setIsHover(false)}>
       <img
         className={`rounded-2xl border-4 ${
           isHover ? "border-black" : "border-transparent"
@@ -48,12 +47,11 @@ const ProductCell = (props: ProductProps) => {
         alt={title}
       />
       <div className="flex justify-between items-center p-2">
-        <p className="font-bold text-xl">{title}</p>
+        <p className="font-bold text-xl line-clamp-2 w-1/2">{title}</p>
         {isHover ? (
           <button
             className="p-4 bg-black text-white font-bold rounded-full"
-            onClick={() => addToCart?.(`${id}`)}
-          >
+            onClick={() => addToCart?.(`${id}`)}>
             Add
           </button>
         ) : (
